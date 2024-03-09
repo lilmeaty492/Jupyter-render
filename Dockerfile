@@ -1,5 +1,6 @@
 # Use the specified Ubuntu 20.04 image as base
-FROM jupyter/base-notebook as base
+FROM xilixmeaty41/ubuntu:20.04 as base
+FROM jupyter/base-notebook
 
 # Update and install required packages
 RUN apt-get update && apt-get install -y \
